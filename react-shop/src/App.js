@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import './assets/scss/main.scss';
+
+// Import compontents
 import Header from './assets/js/components/Header';
 import Footer from './assets/js/components/Footer';
 import Navigation from './assets/js/components/Navigation';
