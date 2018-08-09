@@ -3,7 +3,9 @@ import React, { Component } from "react";
 class Shop extends Component {
     render() {
         return (
-            <h1>Shop</h1>
+            <div className="col-8 align-self-center">
+                <h1>Shop</h1>
+            </div>
         );
     }
 }

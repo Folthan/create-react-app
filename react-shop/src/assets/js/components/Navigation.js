@@ -1,40 +1,20 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import HomePage from './pages/Home';
-import AboutPage from './pages/About';
-import ShopPage from './pages/Shop';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => (
-    <Router>
-        <nav>
+        <nav className="row">
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                    <Link to="/shop">Shop</Link>
+                    <NavLink to="/shop">Shop</NavLink>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <NavLink to="/about">About</NavLink>
                 </li>
             </ul>
-            <Route exact path="/" component={Home} />
-            <Route path="/shop" component={Shop} />
-            <Route path="/about" component={About} />
         </nav>
-    </Router>
-  );
-  
-  const Home = () => (
-    <HomePage />
-  );
-
-  const Shop = () => (
-    <ShopPage />
-  );
-  
-  const About = ({ match }) => (
-    <AboutPage />
   );
   
   export default Navigation;
